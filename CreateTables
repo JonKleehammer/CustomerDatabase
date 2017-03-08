@@ -3,33 +3,33 @@
 
 drop table if exists customers;
 
-# creating test customer database BFLT
+# creating a test customer database for B########### F#########
 create table customers(
 	customer_id int unsigned not null auto_increment primary key,
 	first_name varchar(30) not null,
-    last_name varchar(30) not null,
-    email varchar(60) null,
-    phone varchar(20) not null,
-    birth_date date not null,
-    gender enum('M', 'F') not null,
-    date_entered timestamp);
+    	last_name varchar(30) not null,
+    	email varchar(60) null,
+    	phone varchar(20) not null,
+    	birth_date date not null,
+    	gender enum('M', 'F') not null,
+    	date_entered timestamp);
 
 insert into customers values
-# 	id		first		last			email										phone						birth	   gender	timestamp
+# 	id	first	last	email				phone		birth	   gender	timestamp
 	(null, 'blank', 'whiteout', 'invisible@otherworldly.net', '000-000-0000', "0000-01-01", 'M', now() ),
-    (null, 'Draco', 'Malfoy', 'iHateMudbloods@hotmail.com', '682-700-1400', "1994-09-18", 'M', now() ),
-    (null, 'Harry', 'Potter', 'orphanwizard@gmail.com', '817-099-1876', "1995-03-20", 'M', now() ),
-    (null, 'Gandalf', 'Grey', 'wizardsrule@tolkien.com', '100-123-4444', "1301-11-22", 'M', now() ),
-    (null, 'ET', 'Alien', 'whereishome@juno.com', '888-876-1390', "1980-05-18", 'M', now() ),
-    (null, 'John', 'Doe', 'johndoe@missing.com', '467-824-1598', "0000-01-01", 'M', now() ),
-    (null, 'Jane', 'Doe', 'janedoe@missing.com', '467-940-2094', "0000-01-01", 'F', now() ),
-    (null, 'Hermoine', 'Granger', 'emmawatson@gmail.com', '392-887-7899', "1995-04-23", 'F', now() ),
-    (null, 'Amelia', 'Earhart', 'planeprincess@gmail.com', '193-010-2244', "1897-07-24", 'F', now() ),
-    (null, 'Malcolm', 'Reynolds', 'serenity@space.com', '981-0909-4467', "2231-05-08", 'M', now() ),
-    (null, 'git', 'hub', 'github@github.com', '632-139-8888', "1999-02-07", 'F', now() ),
-    (null, 'almost', 'done', 'random@madeup.com', '123-456-7890', "2000-01-01", 'F', now() ),
-    (null, 'Edward', 'Elric', 'shorty@hotmail.com', '683-037-3637', "1990-12-02", 'M', now() ),
-    (null, 'Rick', 'Sanchez', 'nunya@business.com', '999-666-9999', "1967-06-06", 'M', now() ),
-    (null, 'Morty', 'Smith', 'spaceisokay@gmail.com', '434-652-0982', "1995-01-13", 'M', now() ),
-    (null, 'Bird', 'Person', 'ilovetammy@birdsofafeather.com', '549-947-2673', "1970-09-20", 'M', now() ),
-    (null, 'Jimmy', 'John', null, '817-863-6683', "1980-10-14", 'M', now() );
+    	(null, 'Draco', 'Malfoy', 'iHateMudbloods@hotmail.com', '682-700-1400', "1994-09-18", 'M', now() ),
+    	(null, 'Harry', 'Potter', 'orphanwizard@gmail.com', '817-099-1876', "1995-03-20", 'M', now() ),
+    	(null, 'Gandalf', 'Grey', 'wizardsrule@tolkien.com', '100-123-4444', "1301-11-22", 'M', now() ),
+    	(null, 'ET', 'Alien', 'whereishome@juno.com', '888-876-1390', "1980-05-18", 'M', now() ),
+    	(null, 'John', 'Doe', 'johndoe@missing.com', '467-824-1598', "0000-01-01", 'M', now() ),
+    	(null, 'Jane', 'Doe', 'janedoe@missing.com', '467-940-2094', "0000-01-01", 'F', now() ),
+    	(null, 'Hermoine', 'Granger', 'emmawatson@gmail.com', '392-887-7899', "1995-04-23", 'F', now() ),
+    	(null, 'Amelia', 'Earhart', 'planeprincess@gmail.com', '193-010-2244', "1897-07-24", 'F', now() ),
+    	(null, 'Malcolm', 'Reynolds', 'serenity@space.com', '981-0909-4467', "2231-05-08", 'M', now() ),
+    	(null, 'git', 'hub', 'github@github.com', '632-139-8888', "1999-02-07", 'F', now() ),
+    	(null, 'almost', 'done', 'random@madeup.com', '123-456-7890', "2000-01-01", 'F', now() ),
+    	(null, 'Edward', 'Elric', 'shorty@hotmail.com', '683-037-3637', "1990-12-02", 'M', now() ),
+    	(null, 'Rick', 'Sanchez', 'nunya@business.com', '999-666-9999', "1967-06-06", 'M', now() ),
+    	(null, 'Morty', 'Smith', 'spaceisokay@gmail.com', '434-652-0982', "1995-01-13", 'M', now() ),
+    	(null, 'Bird', 'Person', 'ilovetammy@birdsofafeather.com', '549-947-2673', "1970-09-20", 'M', now() ),
+    	(null, 'Jimmy', 'John', null, '817-863-6683', "1980-10-14", 'M', now() );
